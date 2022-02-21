@@ -1,0 +1,127 @@
+/* variables */
+body {
+  background-color: lightsteelblue;
+}
+
+p {
+  color: #302177;
+}
+
+.container {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2 {
+  font-weight: lighter;
+  font-family: cursive;
+  color: #942b2b;
+  text-shadow: 2px 2px goldenrod;
+  margin: 0;
+}
+
+h2 {
+  color: yellow;
+}
+
+h3 {
+  font-family: fantasy;
+}
+
+.G1 {
+  position: relative;
+  text-align: center;
+}
+
+.headShot {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+}
+
+/* nesting example in _navSec.scss (imported)*/
+nav nav, nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #fefeff;
+}
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #edeaf9;
+}
+
+/* Flexbox section  (moved to flexSec.scss)*/
+.flexSec {
+  display: flex;
+  margin-top: 30px;
+}
+
+.flexSec img {
+  max-width: 100%;
+}
+
+.flex1 {
+  background-color: #c2d1e6;
+  padding: 10px;
+  display: block;
+}
+
+.flex2 {
+  background-color: #d4dfed;
+  padding: 10px;
+}
+
+.flex3 {
+  background-color: #e6ecf5;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .flexSec {
+    margin-top: 10px;
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav li {
+    max-width: 100%;
+    display: block;
+    margin: 3px 0;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 2px;
+    float: none;
+  }
+}
+group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

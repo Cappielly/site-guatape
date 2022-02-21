@@ -1,0 +1,63 @@
+
+
+/* variables */
+$bgColor: lightsteelblue;
+$pColor: rgb(48, 33, 119);
+
+body{
+    background-color: $bgColor;
+}
+
+p{
+    color: $pColor;
+}
+
+.container{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import "headSec.scss";
+
+
+
+/* nesting example in _navSec.scss (imported)*/
+@import "navSec.scss";
+
+
+/* Flexbox section  (moved to flexSec.scss)*/
+@import "flexSec.scss";
+
+@media screen and (max-width: 700px){
+    .flexSec{
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .nav li{
+        max-width: 100%;
+        display: block;
+        margin: 3px 0;
+        padding: 2px 4px;
+        font-size: 90%;
+        border-radius: 2px;
+        float: none;
+    }
+}
+
+
+group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+

@@ -1,0 +1,28 @@
+
+body{
+    background-color: lightblue;
+}
+
+header{
+    padding: 20px;
+    font-size: 140%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    /*use minmax to create new row when img width is reduced past 400px */
+
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    padding: 10px;
+}
+footer a{
+    color:blue;
+}

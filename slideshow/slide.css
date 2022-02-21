@@ -1,0 +1,117 @@
+
+body{
+    background-color: lightsteelblue;
+}
+
+h1{
+    padding: 10px;
+}
+
+h2{
+    padding: 20px 10px;
+}
+
+.main{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.slide{
+    width: 100%;
+    position: relative;
+    border: 2px solid maroon;
+}
+
+.text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+img{
+    /*to fit img correctly in parent div: */
+    display: block; 
+    width: 100%;
+}
+
+/* call to action btn */
+
+
+/* back/next buttons */
+.cycle-prev, .cycle-next{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    /*make invisible until hover*/
+    opacity: 0;
+    transition:opacity .5s;
+
+}
+.cycle-next{
+    right: -2px;
+}
+ /*show when cursor over parent div*/
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next{
+    opacity: 1;
+}
+
+.cycle-pager{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* style cycle-pager dots:*/
+
+.cycle-pager span{
+    /*remove dots:*/
+    text-indent: -9000px;
+    display: inline-block;
+    /*create larger dots:*/
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: darkred;
+    margin: 5px;
+    /*change curson when over dots:*/
+    cursor: pointer;
+}
+
+/*change color of selected dot#:*/
+.cycle-pager .cycle-pager-active{
+    background-color: gold;
+    border: 2px solid red;
+
+}
+
+
+footer a{
+    color: darkblue;
+}
+
+/*media query to drop text below parent div*/
+
+@media screen and (max-width: 450px){
+    .text{
+        position: static;
+        background-color: #000;
+        font-size: 90%;
+        padding: 10px;
+    }
+}
+
+
+

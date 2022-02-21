@@ -1,0 +1,23 @@
+
+.flexSec{
+    display: flex;
+    margin-top: 30px;
+}
+
+.flexSec img{
+    max-width: 100%;
+}
+
+.flex1{
+    background-color: lighten($bgColor,5%);
+    padding: 10px;
+    display: block;
+}
+.flex2{
+    background-color: lighten($bgColor,10%);
+    padding: 10px;
+}
+.flex3{
+    background-color: lighten($bgColor,15%);
+    padding: 10px;
+}

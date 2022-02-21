@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slide.css">
+
+    <!--javascript links-->
+
+    <script type="text/javascript" src="js/cycle2.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <title>Slideshow</title>
+</head>
+
+<body>
+    <header>
+        <h1>Presentaci&oacute;n De Diapositivas </h1>
+        <h2>Slideshow</h2>
+    </header>
+
+    <!--Leveraging js without using js-->
+   
+    <div class="main">
+            <!--default cycle2 classname = "cycle-slideshow"-->
+            <!-- data-cycle-slides=".slide"> integrates .slide text into js-->
+            
+            <!--slideshow with styled back/foreward buttons, pager buttons, call to action btn and different hover functions-->
+                <div class="cycle-slideshow"
+            
+                data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+
+                <!--Above are js data attributes-->
+                
+                <span class="cycle-prev">&laquo;</span>
+                <span class="cycle-next">&raquo;</span>
+                <span class="cycle-pager"></span>
+
+                 <!--img text overlay-->
+
+                    <div class="slide">
+                        <img src="./penol1.jpg" alt="foto1">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 1 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol2.jpg" alt="foto2">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol3.jpg" alt="foto3">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol4.jpg" alt="foto4">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 4
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol5.jpg" alt="foto5">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol6.jpg" alt="foto6">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 6
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./penol7.jpg" alt="foto7">
+                        <div class="text">
+                            <p>
+                                Guatape/El Pe&ntildeol 7
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+        <footer>
+            <a href="../index.html">Hogar</a>
+        </footer>
+
+      <!--js scripts repeated to work, no idea why-->
+
+        <script type="text/javascript" src="js/cycle2.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+</body>
+
+</html>

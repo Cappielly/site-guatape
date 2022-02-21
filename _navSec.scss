@@ -1,0 +1,27 @@
+
+
+nav{
+    
+    nav, ul{
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        float: left;
+        margin-right: 20px;
+        list-style: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        background-color: lighten($pColor, 70%);
+    }
+    li a{
+        color: #000;
+        text-decoration: none;
+    }
+    li:hover{
+        background-color: lighten($pColor, 65%);
+    }
+    
+}
+
+
